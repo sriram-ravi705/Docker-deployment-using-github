@@ -15,4 +15,4 @@ Before you can deploy the Docker image to Docker Hub, make sure you have the fol
    To add these secrets, navigate to your GitHub repository, go to **Settings > Secrets**, and add them there.
 
 ## Architecture
-![Alt Text](./Diagram (2).png)
+![Alt Text](./Diagram%20(2).png)
