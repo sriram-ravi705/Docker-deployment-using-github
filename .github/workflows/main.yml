@@ -2,7 +2,7 @@ name: docker deployment
 on: push
 jobs:
   docker_deployment:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: git checkout
         uses: actions/checkout@v4
