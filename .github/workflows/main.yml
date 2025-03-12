@@ -10,5 +10,6 @@ jobs:
         uses: docker/setup-buildx-action@v3
       - name: docker build & push
         run: |
-          docker build -t javaapp .
-          docker image ls | grep javaapp
+          docker build -t sriramravi477/javaapp:${{ github:run_id }} .
+          docker login -u ${{ secrets.DOCKER_CRED_USR }} -p ${{ secrets.DOCKER_CRED_PSW }}
+          docker push sriramravi477/javaapp:${{ github:run_id }}
