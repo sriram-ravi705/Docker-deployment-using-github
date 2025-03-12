@@ -12,7 +12,7 @@ public class StartApplication {
 
     @GetMapping("/")
     public String index(final Model model) {
-        model.addAttribute("title", "Welcome to the CUPCY CLOUD DevOps TECH Changes........");
+        model.addAttribute("title", "Welcome to the Java Spring Basic App........");
         model.addAttribute("msg", "This is sample Application. Thanks!!!");
         return "index";
     }
